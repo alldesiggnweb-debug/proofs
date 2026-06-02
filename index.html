@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asociación de egresados y amigos de la ENCRyM, A.C. | Inicio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <meta property="og:title" content="Asociación de egresados y amigos de la ENCRyM, A.C." />
+        <meta property="og:url" content="https://www." />
+        <meta property="og:image" content="/assets/img/logo.png" />
+        <link rel="icon" type="image/x-icon" href="assets/favicon.png" />
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-container">
+            <div class="logo-area">
+                <img src="logo.png" alt="Logo Asociación ENCRyM" class="header-logo">
+                
+                <div class="header-logo-container">
+    
+    
+</div>
+
+
+            </div>
+            <button class="mobile-toggle" id="mobileToggle" aria-label="Menú"><i class="fas fa-bars"></i></button>
+            <nav class="main-nav" id="mainNav">
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link active">Inicio</a></li>
+                    <li><a href="quienes.html" class="nav-link">Quiénes somos</a></li>
+                    <li><a href="mision-vision.html" class="nav-link">Misión y Visión</a></li>
+                    <li><a href="objetivos.html" class="nav-link">Objetivos y Actividades</a></li>
+                    <li><a href="participar.html" class="nav-link">Cómo Participar</a></li>
+                    <li><a href="noticias.html" class="nav-link">Noticias y Eventos</a></li>
+                    <li><a href="contacto.html" class="nav-link">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero-section">
+            <div class="hero-overlay"></div>
+            <div class="container hero-content">
+                <h1 class="hero-title">Custodios del patrimonio.<br>Red de quienes lo hicieron posible.</h1>
+                <p class="hero-subtitle">La Asociación de Egresados y Amigos de la ENCRyM es la comunidad que une a profesionales, estudiantes y aliados comprometidos con la conservación, la restauración y la museología de México.</p>
+                <div class="hero-buttons">
+                    <a href="quienes.html" class="btn btn-primary">Conoce la Asociación</a>
+                    <a href="participar.html" class="btn btn-outline-light">Únete a nosotros</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="features-section">
+            <div class="container">
+                <div class="features-grid">
+                    <div class="feature-card"><div class="feature-icon"><i class="fas fa-users"></i></div><h3>Comunidad</h3><p>Conectamos a egresados de la ENCRyM con una red activa de profesionales, investigadores y aliados que comparten la misma vocación: proteger el patrimonio cultural de México.</p></div>
+                    <div class="feature-card"><div class="feature-icon"><i class="fas fa-graduation-cap"></i></div><h3>Formación</h3><p>Apoyamos la formación continua a través de cursos, seminarios, publicaciones y eventos que fortalecen las disciplinas de la conservación, la restauración y la museología.</p></div>
+                    <div class="feature-card"><div class="feature-icon"><i class="fas fa-landmark"></i></div><h3>Patrimonio</h3><p>Contribuimos a la protección, conservación y difusión del patrimonio cultural de la nación, en colaboración con la ENCRyM y el Instituto Nacional de Antropología e Historia.</p></div>
+                </div>
+                <div class="feature-quote"><p>“Somos la memoria activa de una escuela que forma a quienes cuidan la memoria de todos.”</p></div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-content">
+            <div class="footer-info">
+                <p>Asociación de Egresados y Amigos de la ENCRyM, A.C.<br>Organización civil sin fines de lucro</p>
+                <p class="legal-note">La Asociación es una entidad autónoma que actúa en colaboración con la ENCRyM del INAH.</p>
+            </div>
+            <div class="footer-links">
+                <a href="#">Aviso de privacidad</a> | <a href="#">Términos de uso</a>
+                <p class="copyright">© 2023–2026 Asociación de Egresados y Amigos de la ENCRyM. Todos los derechos reservados.</p>
+            </div>
+            <div class="footer-dev">
+    <span class="dev-label">Desarrollo</span>
+    <a href="mailto:alldessign.web@gmail.com"><img src="logo_f-02.png" alt="Logo ENCRyM" class="dev-logo"></a>
+</div>
+
+
+        </div>
+    </footer>
+
+    <script>
+        const toggle = document.getElementById('mobileToggle');
+        const nav = document.getElementById('mainNav');
+        if(toggle) toggle.addEventListener('click', () => nav.classList.toggle('nav-open'));
+        document.querySelectorAll('.nav-link').forEach(l => l.addEventListener('click', () => nav.classList.remove('nav-open')));
+    </script>
+</body>
+</html>
